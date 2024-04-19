@@ -3,19 +3,94 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <Button
         android:id="@+id/btn_show_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:onClick="btnClick"
-        android:text="Show Data"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Show Data"
+        android:onClick="btnClick" />
 
     <TextView
         android:id="@+id/tv1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_show_data"
+        android:layout_marginTop="20dp" />
 
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="20dp"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="Age" />
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Insert"
+        android:onClick="insertData" />
+
+    <EditText
+        android:id="@+id/update_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_insert"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:hint="ID to Update" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Update"
+        android:onClick="updateData" />
+
+    <EditText
+        android:id="@+id/delete_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_update"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:hint="ID to Delete" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delete_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Delete"
+        android:onClick="deleteData" />
 
 </RelativeLayout>
